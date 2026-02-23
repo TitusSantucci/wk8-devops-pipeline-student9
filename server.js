@@ -1,0 +1,7 @@
+const express = require("express");
+const app = express();
+
+app.get("/", (req, res) => res.send("Hello from Student 9 pipeline!"));
+
+const port = process.env.PORT || 5000;
+app.listen(port, "0.0.0.0", () => console.log(`Running on port ${port}`));
